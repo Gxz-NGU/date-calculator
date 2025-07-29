@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日期计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>日期计算器</h1>
+        <div class="input-group">
+            <label>起始<br>日期:</label>
+            <div class="date-inputs">
+                <input type="number" id="year" placeholder="年"><span>年</span>
+                <input type="number" id="month" placeholder="月"><span>月</span>
+                <input type="number" id="day" placeholder="日"><span>日</span>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="days-to-add">加上:</label>
+            <input type="number" id="days-to-add" placeholder="天数" value="0">
+            <span>天</span>
+        </div>
+        <button id="calculate-btn">计算</button>
+        <div class="result-container">
+            <h2>结果:</h2>
+            <p id="result-date">---</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
